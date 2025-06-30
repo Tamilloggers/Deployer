@@ -3,15 +3,11 @@ name: Build and Push Docker Image
 on:
   push:
     branches:
-      - main
+      - main  # or change to your default branch
 
 jobs:
   build-and-push:
-    runs-on: ubuntu-latest 
-
-    permissions:
-      contents: read
-      packages: write
+    runs-on: ubuntu-latest
 
     steps:
       - name: Checkout code
