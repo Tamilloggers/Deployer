@@ -9,4 +9,3 @@ RUN uv pip install --no-cache-dir asyncio aiofiles aiohttp aioshutil anytree aps
 
 COPY . .
 
-CMD ["bash", "start.sh"]
